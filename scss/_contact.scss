@@ -1,0 +1,101 @@
+.contact {
+  height: 100%;
+  padding-top: 40vh;
+  padding-bottom: 20vh;
+  overflow: scroll;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+      to right,
+      rgba($primary-color, 0.9),
+      rgba($primary-color, 0.3)
+    ),
+    url("../img/model-1.jpg") center top;
+  background-size: cover;
+
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  &__container {
+    margin: 0 4rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+  }
+
+  &__item {
+    margin: 10px 0px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: rgb(128, 128, 128, 0.3);
+    border: 2px solid white;
+    border-radius: 10px;
+    label {
+      margin: 1rem 0 5px;
+    }
+    input {
+      height: 2rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      padding: 0 5px;
+    }
+    textarea {
+      font-size: 1rem;
+      border-radius: 5px;
+      padding: 0 5px;
+    }
+  }
+
+  button {
+    width: fit-content;
+    margin: 10px auto 10px;
+    padding: 10px;
+    color: $secondary-color;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid $secondary-color;
+    border-radius: 10px;
+    &:hover {
+      cursor: pointer;
+      color: white;
+      background-color: $secondary-color;
+    }
+  }
+
+  .social-icons {
+    position: initial;
+    margin-top: 2rem;
+    i{
+      font-size: 30px;
+    }
+  }
+}
+
+@include tablets{
+  .contact{
+    flex-direction: column;
+    &__container{
+      margin: 1rem 0;
+    }
+  }
+}
+
+@include mobile{
+  form {
+    width: 90%;
+    margin: auto;
+  }
+}
+
