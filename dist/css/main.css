@@ -344,9 +344,9 @@
   }
 }
 @media screen and (max-width: 450px) {
-  form {
+  .contact__container {
     width: 90%;
-    margin: auto;
+    margin: 20px auto 10px;
   }
 }
 @media screen and (min-width: 768px) {

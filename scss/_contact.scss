@@ -77,25 +77,24 @@
   .social-icons {
     position: initial;
     margin-top: 2rem;
-    i{
+    i {
       font-size: 30px;
     }
   }
 }
 
-@include tablets{
-  .contact{
+@include tablets {
+  .contact {
     flex-direction: column;
-    &__container{
+    &__container {
       margin: 1rem 0;
     }
   }
 }
 
-@include mobile{
-  form {
+@include mobile {
+  .contact__container{
     width: 90%;
-    margin: auto;
+    margin: 20px auto 10px;
   }
 }
-
